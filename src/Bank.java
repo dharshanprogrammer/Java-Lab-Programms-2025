@@ -28,7 +28,7 @@ public class Bank {
 
     }
 
-    static void main() {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("\nEnter The Name :");
         String name = s.next();
