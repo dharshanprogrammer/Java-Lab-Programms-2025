@@ -7,37 +7,37 @@ public class Number {
 
     }
     public boolean isZero(){
-        if(number==0) return true;
+        if(this.number==0) return true;
         return false;
     }
     public boolean isPositive(){
-        if(number>0) return true;
+        if(this.number>0) return true;
         return false;
     }
     public boolean isNegative(){
-        if(number<0) return true;
+        if(this.number<0) return true;
         return false;
     }
     public boolean isOdd(){
-        if((number%2)!=0) return true;
+        if((this.number%2)!=0) return true;
         return false;
     }
     public boolean isEven(){
-        if((number%2)==0) return true;
+        if((this.number%2)==0) return true;
         return false;
     }
     public boolean isPrime(){
-        if(number<0 || number ==2 ) return false;
+        if(this.number<0 || this.number ==2 ) return false;
         for(int i=2;i<number;i++)
         {
-            if(number%i == 0) {
+            if(this.number%i == 0) {
                 return false;
             }
         }
         return true;
     }
     public boolean isArmStrong(){
-        double temp=number;
+        double temp=this.number;
         int digits=0;
         while (temp>0){
             digits++;
@@ -88,13 +88,60 @@ public class Number {
         return (Math.sqrt(number));
     }
 
-    public  void main(String[] args) {
+    public  static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        System.out.print("\nEnter the Number");
+        int num = s.nextInt();
+        Number n = new Number(num);
         System.out.print("\nEnter Number");
         double number = s.nextDouble();
         boolean decision = true;
         while (decision){
-            System.out.print("\n1. isZero() " +"\n isPositive()"+"\nisNegative()"+"\n");
+            System.out.print("\n1. isZero() " +"\n 2.isPositive()"+"\n3.isNegative()"+"\n4.isOdd()"+"\n5.isEven()"+"\n6.isPrime()"+"\n7.isArmstrong()"+"\n8.getfactorial"+"\n9.getSquare()"+"\n10.getSqart()"+"\n11.Reverse()");
+            int decision1 = s.nextInt();
+            switch(decision1){
+                case 1->{
+                    System.out.println(n.isZero()?"Zero":"Not Zero");
+
+                }
+                case 2->{
+                    System.out.println(n.isPositive()?"Positive":"Not Positive");
+
+                }
+                case 3->{
+                    System.out.println(n.isNegative()?"Negative":"Not Negative");
+                }
+                case 4->{
+                    System.out.println(n.isOdd()?"Odd : "+n.number:"Not Odd"+n.number);
+                }
+                case 5->{
+                    System.out.println(n.isEven()?"Even Number"+n.number:"Not Even Number"+n.number);
+
+                }
+                case 6-> {
+                    System.out.println(n.isPrime() ? "Prime " + n.number:"Not Prime"+n.number);
+                }
+                case 7->{
+                    System.out.println(n.isArmStrong()?"ArmStrong Number"+n.number:"Not Armstrong "+n.number);
+
+                }
+                case 8->{
+                    System.out.println(n.getFactorial());
+                }
+                case 9->{
+                    System.out.println(n.getSquare());
+
+                }
+                case 10->{
+                    System.out.println(n.getSqrt());
+                }
+                case 11->{
+                    System.out.println(n.Reverse());
+                }
+                default ->{
+                    decision = false;
+                }
+            }
         }
     }
 
