@@ -4,7 +4,8 @@ public class Employee {
     float salary;
     String name;
     int employee_id;
-    Employee(float salary,String name,int employee_id){
+
+    Employee(float salary, String name, int employee_id) {
         this.salary = salary;
         this.name = name;
         this.employee_id = employee_id;

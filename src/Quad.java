@@ -12,10 +12,14 @@ public class Quad {
                 System.out.println("\nThere Is no Solution");
 
         }else if(result==0){
+            double root = (-b+Math.sqrt(result))/(2*a);
             System.out.println("\nThere is One Real Solution");
         }
         else {
-            System.out.println("There are Real Solutions");
+            double root1 = (-b+Math.sqrt(result))/(2*a);
+            double root2 = (-b-Math.sqrt(result))/(2*a);
+
+            System.out.println("There are Two Real Solutions "+"root1: = "+root1+"\nroot 2 :"+root2);
         }
     }
 }
