@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Number {
-    double number;
-    Number(double number){
+    int number;
+    Number(int number){
         this.number = number;
 
     }
@@ -37,7 +37,7 @@ public class Number {
         return true;
     }
     public boolean isArmStrong(){
-        double temp=this.number;
+        int temp=this.number;
         int digits=0;
         while (temp>0){
             digits++;
@@ -45,7 +45,7 @@ public class Number {
 
         }
         temp = number;
-        double tempNumber = 0;
+        int tempNumber = 0;
         while(temp>0){
             double temp2 = (temp%10);
             temp = temp/10;
@@ -55,28 +55,28 @@ public class Number {
         if(tempNumber==number) return true;
         return false;
     }
-    public double getFactorial(){
-        double temp=1;
+    public int getFactorial(){
+        int temp=1;
         for(int i=2;i<=number;i++){
             temp*=i;
         }
         return temp;
     }
-    public double getSquare(){
+    public int getSquare(){
         return (number*number);
     }
-    public double SumofDigits(){
-        double temp = number;
-        double sumofdigit = 0;
+    public int SumofDigits(){
+        int temp = number;
+        int sumofdigit = 0;
         while(temp>0){
             sumofdigit+=(temp%10);
             temp = temp/10;
         }
         return sumofdigit;
     }
-    public double Reverse(){
-        double reversed = 0;
-        double temp =  number;
+    public int Reverse(){
+        int reversed = 0;
+        int temp =  number;
         while(temp>0){
             reversed = reversed*10;
             reversed +=(temp%10);
@@ -93,11 +93,10 @@ public class Number {
         System.out.print("\nEnter the Number");
         int num = s.nextInt();
         Number n = new Number(num);
-        System.out.print("\nEnter Number");
-        double number = s.nextDouble();
+
         boolean decision = true;
         while (decision){
-            System.out.print("\n1. isZero() " +"\n 2.isPositive()"+"\n3.isNegative()"+"\n4.isOdd()"+"\n5.isEven()"+"\n6.isPrime()"+"\n7.isArmstrong()"+"\n8.getfactorial"+"\n9.getSquare()"+"\n10.getSqart()"+"\n11.Reverse()");
+            System.out.print("\n1. isZero() " +"\n 2.isPositive()"+"\n3.isNegative()"+"\n4.isOdd()"+"\n5.isEven()"+"\n6.isPrime()"+"\n7.isArmstrong()"+"\n8.getfactorial"+"\n9.getSquare()"+"\n10.getSqart()"+"\n11.Reverse()"+"\n12.Sumofdigts");
             int decision1 = s.nextInt();
             switch(decision1){
                 case 1->{
@@ -137,6 +136,9 @@ public class Number {
                 }
                 case 11->{
                     System.out.println(n.Reverse());
+                }
+                case 12->{
+                    System.out.print(n.SumofDigits());
                 }
                 default ->{
                     decision = false;
