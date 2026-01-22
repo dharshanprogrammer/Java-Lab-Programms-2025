@@ -1,8 +1,5 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Scanner;
-
+import java.util.*;
+import java.io.*;
 public class CheckFile {
 
     public static void main(String[] args) {
