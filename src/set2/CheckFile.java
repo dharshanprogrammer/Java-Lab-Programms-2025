@@ -1,3 +1,5 @@
+package set2;
+
 import java.util.*;
 import java.io.*;
 public class CheckFile {
@@ -22,7 +24,7 @@ public class CheckFile {
 
 
             }
-            System.out.print("\nNumber of Characters "+characters+"\nNumber Of Lines"+lines+"\nNumber of Words"+words);
+            System.out.print("\nset2.Number of Characters "+characters+"\nset2.Number Of Lines"+lines+"\nset2.Number of Words"+words);
 
         }
         catch(IOException o){

@@ -1,3 +1,5 @@
+package set1;
+
 import java.util.Scanner;
 
 public class Bank {
@@ -24,7 +26,7 @@ public class Bank {
         display();
     }
     public void  display(){
-        System.out.print("\n Account Number : " + account_number +"\n Holder Name "+ name+"\nBalance"+balance);
+        System.out.print("\n Account set2.Number : " + account_number +"\n Holder Name "+ name+"\nBalance"+balance);
 
     }
 

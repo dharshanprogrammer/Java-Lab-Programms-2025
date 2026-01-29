@@ -1,3 +1,5 @@
+package set2;
+
 import java.util.Scanner;
 
 public class Number {
@@ -90,7 +92,7 @@ public class Number {
 
     public  static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("\nEnter the Number");
+        System.out.print("\nEnter the set2.Number");
         int num = s.nextInt();
         Number n = new Number(num);
 
@@ -114,14 +116,14 @@ public class Number {
                     System.out.println(n.isOdd()?"Odd : "+n.number:"Not Odd"+n.number);
                 }
                 case 5->{
-                    System.out.println(n.isEven()?"Even Number"+n.number:"Not Even Number"+n.number);
+                    System.out.println(n.isEven()?"Even set2.Number"+n.number:"Not Even set2.Number"+n.number);
 
                 }
                 case 6-> {
                     System.out.println(n.isPrime() ? "Prime " + n.number:"Not Prime"+n.number);
                 }
                 case 7->{
-                    System.out.println(n.isArmStrong()?"ArmStrong Number"+n.number:"Not Armstrong "+n.number);
+                    System.out.println(n.isArmStrong()?"ArmStrong set2.Number"+n.number:"Not Armstrong "+n.number);
 
                 }
                 case 8->{

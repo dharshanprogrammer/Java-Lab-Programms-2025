@@ -1,4 +1,4 @@
-import com.sun.source.tree.LambdaExpressionTree;
+package set1;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class Book {
 
     public void getBook() {
         if (availablecompies < 1) {
-            System.out.println("Book Not Available :");
+            System.out.println("set1.Book Not Available :");
         }
         availablecompies += 1;
         display();
@@ -29,24 +29,24 @@ public class Book {
     }
 
     public void display() {
-        System.out.print("\nBook Name : " + bookname + "\nBook_Id : " + bookid + "\nBook_Author : " + author + "Total Copies : " + totalcompies + "Avilable copies :" + availablecompies);
+        System.out.print("\nset1.Book Name : " + bookname + "\nBook_Id : " + bookid + "\nBook_Author : " + author + "Total Copies : " + totalcompies + "Avilable copies :" + availablecompies);
 
     }
 
     static void main() {
         Scanner s = new Scanner(System.in);
-        System.out.print("\nEnter Book Name");
+        System.out.print("\nEnter set1.Book Name");
         String bookname = s.next();
         System.out.println("\nEnter bookAuthor Name: ");
         String author = s.next();
         System.out.print("\nEnter Book_id");
         int book_id = s.nextInt();
-        System.out.print("\nEnter Total Copies Of Book : ");
+        System.out.print("\nEnter Total Copies Of set1.Book : ");
         int total_Copies = s.nextInt();
         Book b = new Book(bookname, author, book_id, total_Copies);
         boolean decision1 = true;
         while (decision1) {
-            System.out.print("\nEnter 1 for buyBook : " + "\nEnter 2 for Give Book " + "\nEnter 3 for Book Details");
+            System.out.print("\nEnter 1 for buyBook : " + "\nEnter 2 for Give set1.Book " + "\nEnter 3 for set1.Book Details");
             int decision2 = s.nextInt();
 
             switch (decision2) {

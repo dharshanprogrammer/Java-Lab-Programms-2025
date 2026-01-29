@@ -1,3 +1,5 @@
+package set1;
+
 import java.util.Scanner;
 
 public class MarkSheet {
@@ -16,18 +18,18 @@ public class MarkSheet {
     public void displayMarkSheet(){
         int total = tamil+english+maths+science+social_science;
         int average = total/5;
-        System.out.print("\nStudent Name : "+studentName+"\nRoll No : " + rollno+"\nEnglish:"+english+"\nMaths : "+maths+"\nScience :" + science +"\nSocial _Science "+social_science+"\nAverage : "+average + "\nTotal Marks : " +total);
+        System.out.print("\nset1.Student Name : "+studentName+"\nRoll No : " + rollno+"\nEnglish:"+english+"\nMaths : "+maths+"\nScience :" + science +"\nSocial _Science "+social_science+"\nAverage : "+average + "\nTotal Marks : " +total);
 
     }
 
     static void main() {
 
         Scanner s = new Scanner(System.in);
-        System.out.print("\nEnter Number Of Students :");
+        System.out.print("\nEnter set2.Number Of Students :");
         int n = s.nextInt();
         MarkSheet members[] =  new MarkSheet[n];
         for(int i =0;i<n;i++){
-            System.out.print("\n  Enter Student Name "+"\n  Enter Roll No" +"\nEnter Tamil Mark"+ "\n Enter English:"+"\nEnter Maths : "+" \nEnter Science :"  +" \n Enter Social _Science ");
+            System.out.print("\n  Enter set1.Student Name "+"\n  Enter Roll No" +"\nEnter Tamil Mark"+ "\n Enter English:"+"\nEnter Maths : "+" \nEnter Science :"  +" \n Enter Social _Science ");
              String Studentname = s.next();
              int rollono = s.nextInt();
              int tamil = s.nextInt();

@@ -1,4 +1,5 @@
-import java.util.RandomAccess;
+package set1;
+
 import java.util.Scanner;
 
 public class Circle {
@@ -7,11 +8,11 @@ public class Circle {
         this.radius = radius;
     }
     public void computeArea(){
-        System.out.print("\nArea Of The Circle : " + (radius*Math.PI*radius));
+        System.out.print("\nArea Of The set1.Circle : " + (radius*Math.PI*radius));
 
     }
     public void computeCircumferance(){
-        System.out.print("\nCircumferance Of Circle :" + (2*radius*Math.PI));
+        System.out.print("\nCircumferance Of set1.Circle :" + (2*radius*Math.PI));
     }
 
     static void main() {

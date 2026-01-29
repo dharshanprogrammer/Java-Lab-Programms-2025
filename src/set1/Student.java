@@ -1,3 +1,5 @@
+package set1;
+
 import java.util.Scanner;
 //First Program
 class Student {
@@ -17,12 +19,12 @@ class Student {
         String name;
         int rollono;
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter the Number Of Students");
+        System.out.println("Enter the set2.Number Of Students");
         n=s.nextInt();
         Student[] students = new Student[n];
         for(int i=0;i<n;i++)
         {
-            System.out.println("Enter The Student Details(i+1)");
+            System.out.println("Enter The set1.Student Details(i+1)");
             System.out.print("/nEnter THe Name");
             String tempName = s.next();
             System.out.print("/nEnter The Rollno ");
