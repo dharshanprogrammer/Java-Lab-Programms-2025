@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 class TicketFare {
 
-    // Adult fare
+
     double calculateFare(double baseFare) {
         return baseFare;
     }
 
-    // Child fare (50% discount)
+
     double calculateFare(double baseFare, String child) {
         return baseFare * 0.5;
     }
 
-    // Senior Citizen fare (30% discount)
+
     double calculateFare(double baseFare, int age) {
         return baseFare * 0.7;
     }

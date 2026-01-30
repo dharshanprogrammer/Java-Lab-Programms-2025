@@ -2,17 +2,17 @@ package set4;
 
 class Addition {
 
-    // Add two integers
+
     int add(int a, int b) {
         return a + b;
     }
 
-    // Add three integers
+
     int add(int a, int b, int c) {
         return a + b + c;
     }
 
-    // Add integer and float
+
     float add(int a, float b) {
         return a + b;
     }

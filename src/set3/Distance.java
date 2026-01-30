@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class RanchiDistance {
 
-    // Binary search method for String array
+
     static int binarySearch(String[] cities, String key) {
         int low = 0;
         int high = cities.length - 1;
@@ -26,7 +26,7 @@ class RanchiDistance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Cities must be in SORTED order
+
         String[] cities = {
                 "Bangalore",
                 "Chennai",
@@ -36,7 +36,7 @@ class RanchiDistance {
                 "Mumbai"
         };
 
-        // Corresponding distances from Ranchi (in km)
+
         int[] distance = {
                 1700, // Bangalore
                 1600, // Chennai
