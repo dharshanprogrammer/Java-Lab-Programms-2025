@@ -57,7 +57,7 @@ class VehicleDemo{
         System.out.print("\nRent For The Car = "+v.CalculateRent(daysCar));
         v = new Bike(300,"1235");
         System.out.print("\nRent For The Bike = "+v.CalculateRent(daysBike));
-        v = new Bike(1000,"4577");
+        v = new Truck(1000,"4577");
         System.out.print("\nRent For The Truck = "+v.CalculateRent(daysTruck));
 
     }
